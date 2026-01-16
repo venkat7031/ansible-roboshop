@@ -1,5 +1,5 @@
-- name: configuring frontned
-  hosts: frontned
+- name: configuring frontend
+  hosts: frontend
   become: yes
   tasks:
   - name: disable nginx module
