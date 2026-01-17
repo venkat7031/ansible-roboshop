@@ -74,13 +74,13 @@
   #     login_db: cities
 
   - name: import data
-    tags:
+    tags:              # If you want run particular task for this we can use this tags
     - import
     community.mysql.mysql_db:
       name: all
       login_user: root
       login_password: RoboShop@1
-      login_host: mysql.daws84s.site
+      login_host: mysql.daws84.sbs
       state: import
       target: "{{ item }}"
     loop:
