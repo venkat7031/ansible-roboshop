@@ -4,7 +4,7 @@
   tasks:
   - name: install python3
     ansible.builtin.dnf:
-      name:
+      name: insall packages
       state: installed
     loop:
     - python3
